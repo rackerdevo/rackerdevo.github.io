@@ -1,0 +1,1271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9l网页破解_9l游戏盒子解析教程_9l资源导航与工具说明</title>
+<meta name="description" content="9l网页破解相关内容导航：整理9l游戏盒子解析方法、网页小游戏破解流程、资源站点导航与常见问题说明，适合想了解9l破解流程与工具体验的玩家参考。">
+<meta name="keywords" content="9l游戏盒子解析,网页小游戏破解,破解工具教程,资源站点导航,游戏盒子使用说明">
+<style>
+:root{
+  --bg:#0d1117;
+  --bg-2:#131a23;
+  --panel:#161f2a;
+  --panel-2:#1c2733;
+  --line:#26333f;
+  --line-soft:#1f2a35;
+  --text:#e6edf3;
+  --text-2:#a7b6c4;
+  --text-3:#6e8294;
+  --brand:#3fd0c9;
+  --brand-2:#2fa8a2;
+  --accent:#ff8a3d;
+  --accent-soft:#3a2418;
+  --danger:#ff6b6b;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 8px 28px rgba(0,0,0,.35);
+  --sticky-h:104px;
+  --maxw:1340px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{
+  margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶区 ============ */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:linear-gradient(90deg,#123033,#1a2240 60%,#2a1a33);
+  border-bottom:1px solid var(--line);
+  font-size:13px;color:var(--text-2);
+}
+.notice-inner{
+  max-width:var(--maxw);margin:0 auto;padding:7px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.notice-tag{
+  flex:none;background:var(--accent);color:#1a1008;font-weight:700;
+  font-size:11px;letter-spacing:.06em;padding:2px 8px;border-radius:20px;
+}
+.notice-inner strong{color:var(--text)}
+.notice-inner a{color:var(--brand);white-space:nowrap;font-size:12.5px}
+
+.site-header{
+  background:rgba(13,17,23,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:var(--maxw);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{
+  width:38px;height:38px;border-radius:10px;flex:none;
+  background:linear-gradient(145deg,#1d3a3a,#0f2027);
+  border:1px solid #2c4a4a;display:grid;place-items:center;
+  box-shadow:inset 0 0 14px rgba(63,208,201,.18);
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text b{font-size:17px;letter-spacing:.02em;color:#fff}
+.brand-text span{font-size:11px;color:var(--text-3);letter-spacing:.14em}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.main-nav a{
+  color:var(--text-2);font-size:13.5px;padding:6px 11px;border-radius:20px;
+  transition:.18s;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--panel-2);color:var(--brand);text-decoration:none}
+.header-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:172px;background:var(--panel);border:1px solid var(--line);
+  color:var(--text);border-radius:20px;padding:7px 12px;font-size:13px;
+  transition:.2s;
+}
+.search-box input:focus{outline:none;border-color:var(--brand);width:200px}
+.btn-ghost{
+  background:transparent;border:1px solid var(--line);color:var(--text-2);
+  padding:7px 14px;border-radius:20px;font-size:13px;cursor:pointer;transition:.18s;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(900px 380px at 12% -10%,rgba(63,208,201,.16),transparent 65%),
+    radial-gradient(700px 340px at 92% 0%,rgba(255,138,61,.11),transparent 62%),
+    var(--bg-2);
+}
+.hero-grid{
+  max-width:var(--maxw);margin:0 auto;padding:44px 20px 48px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.12em;
+  color:var(--brand);border:1px solid #24484a;background:rgba(63,208,201,.07);
+  padding:4px 12px;border-radius:20px;margin-bottom:16px;
+}
+.hero-eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--brand);display:block}
+h1{
+  font-size:42px;letter-spacing:.01em;
+  background:linear-gradient(100deg,#ffffff 20%,#9fe8e3 78%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:14px;
+}
+.hero-desc{color:var(--text-2);font-size:15px;max-width:560px;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.btn-primary{
+  background:linear-gradient(135deg,var(--brand),#1f8d8a);color:#06201f;
+  font-weight:700;padding:10px 22px;border-radius:24px;font-size:14px;
+  border:none;cursor:pointer;transition:.2s;display:inline-block;
+}
+.btn-primary:hover{filter:brightness(1.1);text-decoration:none;color:#06201f}
+.btn-line{
+  border:1px solid #2d4a4a;color:var(--text);background:rgba(255,255,255,.02);
+  padding:10px 20px;border-radius:24px;font-size:14px;transition:.2s;display:inline-block;
+}
+.btn-line:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-size:21px;color:#fff;line-height:1.2}
+.hero-stats span{font-size:12px;color:var(--text-3)}
+.hero-visual{position:relative}
+.term-card{
+  background:linear-gradient(160deg,#152028,#101720);
+  border:1px solid #23343f;border-radius:14px;box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.term-bar{
+  display:flex;align-items:center;gap:7px;padding:9px 13px;
+  background:#0e161c;border-bottom:1px solid #1e2a34;
+}
+.term-bar i{width:9px;height:9px;border-radius:50%;display:block}
+.term-bar i:nth-child(1){background:#ff6058}
+.term-bar i:nth-child(2){background:#ffbd2e}
+.term-bar i:nth-child(3){background:#28c840}
+.term-bar span{margin-left:8px;font-size:11.5px;color:var(--text-3);letter-spacing:.05em}
+.term-body{padding:16px 16px 20px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:2}
+.term-body .ln{display:block;color:#7fa6b0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.term-body .k{color:var(--accent)}
+.term-body .s{color:#79e3c4}
+.term-body .c{color:#4e6472}
+.term-body .ok{color:#3fd0c9}
+
+/* ============ 布局 ============ */
+.layout{
+  max-width:var(--maxw);margin:0 auto;padding:34px 20px 60px;
+  display:grid;grid-template-columns:186px minmax(0,1fr) 268px;gap:28px;
+  align-items:start;
+}
+.chan-col{position:sticky;top:calc(var(--sticky-h) + 14px)}
+.aux-col{position:sticky;top:calc(var(--sticky-h) + 14px)}
+.panel{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+}
+.panel-head{
+  padding:12px 15px;border-bottom:1px solid var(--line-soft);
+  font-size:13px;font-weight:700;color:var(--text);display:flex;justify-content:space-between;align-items:center;
+}
+.panel-head em{font-style:normal;font-size:11px;color:var(--text-3);font-weight:400}
+.chan-list{padding:8px}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:8px 10px;border-radius:var(--radius-sm);color:var(--text-2);
+  font-size:13.5px;transition:.16s;
+}
+.chan-list a:hover{background:var(--panel-2);color:var(--brand);text-decoration:none}
+.chan-list a span{font-size:11px;color:var(--text-3)}
+
+/* ============ 通用板块 ============ */
+.section{margin-bottom:40px;scroll-margin-top:var(--sticky-h)}
+.section:last-child{margin-bottom:0}
+.sec-head{margin-bottom:16px}
+.sec-title{
+  font-size:20px;letter-spacing:.01em;display:flex;align-items:center;gap:10px;
+}
+.sec-title::before{
+  content:"";width:4px;height:18px;border-radius:3px;flex:none;
+  background:linear-gradient(180deg,var(--brand),var(--brand-2));
+}
+.sec-sub{color:var(--text-3);font-size:13px;margin-top:6px}
+.sec-head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.sec-head-row .sec-title{margin:0}
+
+.overview{
+  background:linear-gradient(150deg,#152028,#111923);
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;color:var(--text-2);font-size:14.5px;
+}
+.overview p{margin:0 0 12px}
+.overview p:last-child{margin-bottom:0}
+.overview strong{color:var(--brand)}
+.overview em{font-style:normal;color:var(--accent)}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.2s;
+}
+.card:hover{border-color:#31505a;transform:translateY(-2px);box-shadow:var(--shadow)}
+.card-thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:#0f171e}
+.card-thumb img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.card:hover .card-thumb img{transform:scale(1.04)}
+.card-badge{
+  position:absolute;top:9px;left:9px;font-size:11px;font-weight:700;
+  background:rgba(9,18,22,.85);color:var(--brand);border:1px solid #2a4a4a;
+  padding:2px 9px;border-radius:20px;backdrop-filter:blur(4px);
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-title{font-size:15px;color:#fff;font-weight:700}
+.card-desc{font-size:12.8px;color:var(--text-2);line-height:1.7;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:11px;color:var(--text-2);background:var(--panel-2);
+  border:1px solid var(--line-soft);padding:2px 8px;border-radius:5px;
+}
+.card-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;color:var(--text-3);border-top:1px solid var(--line-soft);padding-top:9px;
+}
+.card-meta b{color:var(--accent);font-weight:700}
+
+/* 动态列表 */
+.feed-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel)}
+.feed-item{
+  display:grid;grid-template-columns:70px 1fr auto;gap:14px;align-items:center;
+  padding:12px 16px;border-bottom:1px solid var(--line-soft);transition:.16s;
+}
+.feed-item:last-child{border-bottom:none}
+.feed-item:hover{background:var(--panel-2)}
+.feed-time{font-size:12px;color:var(--text-3);font-variant-numeric:tabular-nums}
+.feed-main{min-width:0}
+.feed-name{font-size:14px;color:var(--text);font-weight:600}
+.feed-desc{font-size:12.8px;color:var(--text-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.feed-flag{
+  font-size:11px;padding:2px 9px;border-radius:20px;white-space:nowrap;
+  background:rgba(63,208,201,.1);color:var(--brand);border:1px solid #23484a;
+}
+.feed-flag.warm{background:rgba(255,138,61,.1);color:var(--accent);border-color:#4a3222}
+.feed-flag.cool{background:rgba(255,107,107,.09);color:#ff9a9a;border-color:#4a2626}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
+.cat-item{
+  display:flex;flex-direction:column;gap:5px;padding:14px 15px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  transition:.18s;color:var(--text);
+}
+.cat-item:hover{border-color:var(--brand);background:var(--panel-2);text-decoration:none}
+.cat-item b{font-size:14.5px;color:#fff}
+.cat-item span{font-size:12px;color:var(--text-3);line-height:1.5}
+
+/* 深度正文 */
+.article{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;color:var(--text-2);font-size:14.8px;line-height:1.85;
+}
+.article h3{
+  font-size:16.5px;color:var(--text);margin:24px 0 10px;
+  padding-left:11px;border-left:3px solid var(--brand-2);
+}
+.article h3:first-child{margin-top:0}
+.article p{margin:0 0 12px}
+.article ul{margin:0 0 14px;padding-left:2px}
+.article ul li{
+  position:relative;padding-left:18px;margin-bottom:7px;
+}
+.article ul li::before{
+  content:"";position:absolute;left:2px;top:10px;width:5px;height:5px;
+  border-radius:50%;background:var(--brand-2);
+}
+.article strong{color:#fff}
+.article .hl{color:var(--accent);font-weight:600}
+
+/* 体验路径 */
+.path-list{display:flex;flex-direction:column;gap:12px}
+.path-item{
+  display:grid;grid-template-columns:44px 1fr;gap:16px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;
+}
+.path-num{
+  width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(145deg,#1c3b3b,#12252b);border:1px solid #2a4a4a;
+  color:var(--brand);font-weight:700;font-size:15px;
+}
+.path-item h4{font-size:14.5px;color:#fff;margin-bottom:5px}
+.path-item p{font-size:13.2px;color:var(--text-2);margin:0}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+details.faq{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:13px 16px;font-size:14.2px;color:var(--text);
+  font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";flex:none;color:var(--brand);font-size:18px;line-height:1;font-weight:400;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq[open] summary{color:var(--brand);border-bottom:1px solid var(--line-soft)}
+.faq-answer{padding:13px 16px 15px;font-size:13.5px;color:var(--text-2);line-height:1.8}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:12px}
+.comment{
+  background:var(--panel);border:1px solid var(--line-soft);border-radius:var(--radius-sm);
+  padding:13px 14px;display:flex;flex-direction:column;gap:7px;
+}
+.c-top{display:flex;align-items:center;gap:9px}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11px;font-weight:700;color:#06201f;
+  background:linear-gradient(135deg,#3fd0c9,#2b9b96);
+}
+.c-name{font-size:12.5px;color:var(--text);font-weight:600}
+.c-time{margin-left:auto;font-size:11px;color:var(--text-3)}
+.c-text{font-size:13px;color:var(--text-2);line-height:1.7}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:12px}
+.news-item{
+  display:grid;grid-template-columns:150px 1fr;gap:16px;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:.18s;
+}
+.news-item:hover{border-color:#31505a}
+.news-item img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.news-body{padding:14px 16px 15px 0;display:flex;flex-direction:column;gap:6px;justify-content:center}
+.news-title{font-size:14.5px;color:#fff;font-weight:700}
+.news-date{font-size:11.5px;color:var(--text-3);font-variant-numeric:tabular-nums}
+.news-abs{font-size:12.8px;color:var(--text-2);line-height:1.65}
+
+/* 推荐标签 */
+.reco-wrap{display:flex;flex-wrap:wrap;gap:9px}
+.reco-tag{
+  font-size:13px;color:var(--text-2);background:var(--panel);
+  border:1px solid var(--line);padding:7px 14px;border-radius:20px;transition:.18s;
+}
+.reco-tag:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+
+/* 榜单 */
+.rank-list{display:flex;flex-direction:column;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-item{
+  display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;
+  padding:11px 15px;border-bottom:1px solid var(--line-soft);transition:.15s;
+}
+.rank-item:last-child{border-bottom:none}
+.rank-item:hover{background:var(--panel-2)}
+.rank-no{
+  font-size:13px;font-weight:700;color:var(--text-3);font-variant-numeric:tabular-nums;
+}
+.rank-item:nth-child(1) .rank-no{color:#ff6b6b}
+.rank-item:nth-child(2) .rank-no{color:var(--accent)}
+.rank-item:nth-child(3) .rank-no{color:#ffd166}
+.rank-name{font-size:13.5px;color:var(--text);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank-score{font-size:12px;color:var(--brand);font-variant-numeric:tabular-nums}
+.rank-bar{
+  grid-column:1/-1;height:3px;border-radius:2px;background:var(--line-soft);overflow:hidden;margin-top:-2px;
+}
+.rank-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand-2),var(--brand));border-radius:2px}
+
+/* 辅助栏 */
+.aux-block{margin-bottom:18px}
+.aux-block:last-child{margin-bottom:0}
+.aux-body{padding:12px 14px}
+.mini-list li{
+  display:flex;justify-content:space-between;gap:10px;align-items:baseline;
+  padding:7px 0;border-bottom:1px dashed var(--line-soft);font-size:13px;
+}
+.mini-list li:last-child{border-bottom:none}
+.mini-list a{color:var(--text-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mini-list a:hover{color:var(--brand);text-decoration:none}
+.mini-list span{flex:none;font-size:11px;color:var(--text-3)}
+.hot-num{
+  display:inline-block;width:18px;text-align:center;font-weight:700;color:var(--text-3);
+  font-size:12px;margin-right:6px;
+}
+.mini-list li:nth-child(1) .hot-num{color:#ff6b6b}
+.mini-list li:nth-child(2) .hot-num{color:var(--accent)}
+.mini-list li:nth-child(3) .hot-num{color:#ffd166}
+.update-note{
+  font-size:12.5px;color:var(--text-2);line-height:1.75;
+}
+.update-note b{color:var(--brand)}
+.notice-mini{
+  background:rgba(255,138,61,.07);border:1px solid #40301f;border-radius:var(--radius-sm);
+  padding:11px 13px;font-size:12.5px;color:#e8c9a8;line-height:1.7;
+}
+
+/* 页尾 */
+.site-footer{
+  border-top:1px solid var(--line);background:#0a0f14;margin-top:20px;
+}
+.footer-inner{
+  max-width:var(--maxw);margin:0 auto;padding:38px 20px 24px;
+  display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px;
+}
+.footer-brand .brand{margin-bottom:12px}
+.footer-brand p{font-size:12.8px;color:var(--text-3);line-height:1.8;margin:0 0 12px;max-width:300px}
+.footer-col h4{font-size:13px;color:var(--text);margin-bottom:11px}
+.footer-col li{margin-bottom:8px}
+.footer-col a{font-size:12.8px;color:var(--text-3)}
+.footer-col a:hover{color:var(--brand)}
+.footer-bottom{
+  border-top:1px solid var(--line-soft);max-width:var(--maxw);margin:0 auto;
+  padding:16px 20px 26px;font-size:12px;color:var(--text-3);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;line-height:1.8;
+}
+
+/* 搜索无结果 */
+.no-result{
+  display:none;padding:16px;border:1px dashed var(--line);border-radius:var(--radius-sm);
+  color:var(--text-3);font-size:13.5px;text-align:center;
+}
+.no-result.show{display:block}
+.hidden{display:none !important}
+
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 240px;gap:20px}
+  h1{font-size:36px}
+}
+@media (max-width:1024px){
+  :root{--sticky-h:96px}
+  .layout{grid-template-columns:minmax(0,1fr) 260px;gap:22px}
+  .chan-col{
+    position:static;grid-column:1/-1;
+  }
+  .chan-list{display:flex;flex-wrap:wrap;gap:6px;padding:10px}
+  .chan-list a{background:var(--panel-2);border:1px solid var(--line-soft);padding:6px 13px;border-radius:20px}
+  .chan-list a span{display:none}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-visual{max-width:520px}
+  .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  :root{--sticky-h:92px}
+  body{font-size:14.5px}
+  h1{font-size:29px}
+  .header-inner{padding:10px 14px;gap:12px}
+  .main-nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  .main-nav a{padding:5px 9px;font-size:13px}
+  .search-box input{width:132px}
+  .search-box input:focus{width:150px}
+  .layout{grid-template-columns:1fr;padding:22px 14px 44px;gap:26px}
+  .aux-col{position:static}
+  .hero-grid{padding:28px 14px 32px}
+  .hero-stats{gap:18px}
+  .article{padding:20px 17px;font-size:14.4px}
+  .feed-item{grid-template-columns:60px 1fr;gap:10px}
+  .feed-flag{display:none}
+  .news-item{grid-template-columns:110px 1fr}
+  .news-body{padding:11px 12px 12px 0}
+  .footer-inner{grid-template-columns:1fr;gap:22px;padding:28px 16px 18px}
+  .footer-bottom{padding:14px 16px 22px;flex-direction:column}
+  .notice-inner{padding:6px 14px;font-size:12px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="notice-bar">
+    <div class="notice-inner">
+      <span class="notice-tag">更新</span>
+      <span><strong>11 月 24 日</strong>新增《9l 盒子 3.2 解析流程》与《网页小游戏资源索引》两条工具说明，同步补充 6 个常见报错处理方案。</span>
+      <a href="/#latest">查看更新明细 →</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="#3fd0c9" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M12 12v9M4 7.5 12 12l8-4.5" stroke="#2fa8a2" stroke-width="1.4" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="1.7" fill="#ff8a3d"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <b>9l网页破解</b>
+          <span>WEB TOOLKIT</span>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="主导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选条目</a>
+        <a href="/#latest">最新动态</a>
+        <a href="/#cats">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验路径</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">玩家评论</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="search-box">
+          <input type="search" id="siteSearch" placeholder="搜索条目 / 工具名" aria-label="站内搜索">
+        </div>
+        <button class="btn-ghost" type="button" onclick="document.getElementById('picks').scrollIntoView({behavior:'smooth'})">条目库</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="hero-eyebrow"><i></i>网页工具 · 解析流程 · 资源索引</span>
+      <h1>9l网页破解</h1>
+      <p class="hero-desc">
+        围绕 9l 游戏盒子与网页端小游戏解析场景，整理工具版本、操作流程、常见报错与资源索引。
+        从第一次接触解析工具的新手，到需要排查具体报错的老用户，都能按条目找到对应说明。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#picks">浏览工具条目</a>
+        <a class="btn-line" href="/#guide">查看使用顺序</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>126</b><span>收录条目</span></div>
+        <div><b>18</b><span>工具版本</span></div>
+        <div><b>11-24</b><span>最近更新</span></div>
+        <div><b>4.7</b><span>社区均分</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="term-card">
+        <div class="term-bar"><i></i><i></i><i></i><span>9l-toolkit / resolve.log</span></div>
+        <div class="term-body">
+          <span class="ln"><span class="c"># 载入 9l 盒子解析配置</span></span>
+          <span class="ln"><span class="k">load</span> <span class="s">"box_3.2_profile"</span></span>
+          <span class="ln"><span class="k">parse</span> target=<span class="s">"web-game-entry"</span></span>
+          <span class="ln"><span class="c"># 资源索引匹配</span></span>
+          <span class="ln"><span class="ok">✔</span> 匹配 12 个可用资源节点</span>
+          <span class="ln"><span class="ok">✔</span> 校验签名通过</span>
+          <span class="ln"><span class="k">render</span> mode=<span class="s">"inline"</span> width=<span class="s">1080</span></span>
+          <span class="ln"><span class="c"># 输出可运行页面</span></span>
+          <span class="ln"><span class="ok">✔</span> 完成，用时 1.42s</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+
+  <!-- 左频道栏 -->
+  <aside class="chan-col">
+    <div class="panel">
+      <div class="panel-head">频道索引 <em>12</em></div>
+      <nav class="chan-list" aria-label="频道索引">
+        <a href="/#overview">解析入门<span>基础</span></a>
+        <a href="/#picks">工具版本<span>18</span></a>
+        <a href="/#picks">盒子解析<span>24</span></a>
+        <a href="/#picks">网页游戏<span>31</span></a>
+        <a href="/#latest">更新日志<span>新</span></a>
+        <a href="/#cats">资源索引<span>9</span></a>
+        <a href="/#deep">报错排查<span>16</span></a>
+        <a href="/#deep">签名校验<span>7</span></a>
+        <a href="/#guide">环境配置<span>11</span></a>
+        <a href="/#faq">常见问答<span>6</span></a>
+        <a href="/#comments">玩家评论<span>14</span></a>
+        <a href="/#news">相关资讯<span>6</span></a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main>
+
+    <!-- 1. 领域概览 -->
+    <section class="section" id="overview">
+      <div class="sec-head">
+        <h2 class="sec-title">主题领域概览</h2>
+        <p class="sec-sub">这个方向包含哪些内容，当前值得关注的具体条目</p>
+      </div>
+      <div class="overview">
+        <p>
+          <strong>9l网页破解</strong>所指的领域，本质上是围绕 9l 游戏盒子这类聚合型游戏工具，对网页端小游戏进行解析、资源提取与本地运行的一整套操作知识。
+          它包含三个相对独立的方向：一是<em>盒子侧</em>的版本适配与配置读写，二是<em>网页侧</em>的入口识别、资源路径还原与签名校验，三是<em>环境侧</em>的浏览器设置、缓存清理与报错定位。
+          三者缺一，常常表现为“能载入但跑不起来”或“跑起来但资源缺失”。
+        </p>
+        <p>
+          当前值得关注的具体内容，集中在 9l 盒子 3.2 版本的解析流程变化上：新版把资源索引从单一节点改为多节点分发，签名校验环节前移，导致部分旧教程的步骤顺序失效。
+          与之配套的《9l 盒子 3.2 解析流程》和《网页小游戏资源索引》两条说明已在 11 月 24 日更新，覆盖了节点选择与校验顺序的差异。
+          此外，网页小游戏侧的 <em>Canvas 渲染型</em> 与 <em>DOM 渲染型</em> 在解析策略上分歧明显，前者依赖纹理资源还原，后者更依赖脚本入口定位，这也是新手最容易混淆的地方。
+        </p>
+        <p>
+          从内容消费角度看，这个领域的信息更新节奏由工具版本驱动：大版本通常 2—3 个月一次，小修小补每两周左右。跟随版本号选择教程，比跟随发布时间更可靠。
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="section" id="picks">
+      <div class="sec-head-row">
+        <div>
+          <h2 class="sec-title">精选条目推荐</h2>
+          <p class="sec-sub">按工具版本、解析类型与适用场景挑选的 9 个具体条目</p>
+        </div>
+        <span class="tag">共 9 条 · 更新至 11-24</span>
+      </div>
+
+      <div class="card-grid" id="pickGrid">
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/9l-box32-thumb/400/300" width="400" height="300" loading="lazy" alt="9l盒子3.2解析流程条目封面">
+            <span class="card-badge">盒子解析</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">9l 盒子 3.2 解析流程</h3>
+            <p class="card-desc">新版把资源索引拆成多节点分发，签名校验前移。条目逐步说明节点选择顺序与校验失败后的回退方式，是当前版本最直接的对照文档。</p>
+            <div class="tags"><span class="tag">多节点</span><span class="tag">签名校验</span><span class="tag">版本适配</span></div>
+            <div class="card-meta"><span>更新 11-24</span><b>热度 9.6</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/webgame-canvas-thumb/400/300" width="400" height="300" loading="lazy" alt="Canvas渲染型网页游戏解析条目封面">
+            <span class="card-badge">网页游戏</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Canvas 渲染型小游戏解析</h3>
+            <p class="card-desc">针对以 Canvas 绘制的游戏，重点在纹理资源还原与帧循环入口定位。条目给出资源命名规律与常见缺图现象的对应关系。</p>
+            <div class="tags"><span class="tag">纹理还原</span><span class="tag">帧循环</span><span class="tag">缺图排查</span></div>
+            <div class="card-meta"><span>更新 11-20</span><b>热度 9.2</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/webgame-dom-thumb/400/300" width="400" height="300" loading="lazy" alt="DOM渲染型网页游戏解析条目封面">
+            <span class="card-badge">网页游戏</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">DOM 渲染型小游戏解析</h3>
+            <p class="card-desc">页面由 HTML 结构直接搭建，解析重点转为脚本入口与事件绑定。条目对比了内联脚本与外部模块两种写法的定位差异。</p>
+            <div class="tags"><span class="tag">脚本入口</span><span class="tag">事件绑定</span><span class="tag">结构定位</span></div>
+            <div class="card-meta"><span>更新 11-18</span><b>热度 8.7</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/resource-index-thumb/400/300" width="400" height="300" loading="lazy" alt="网页小游戏资源索引条目封面">
+            <span class="card-badge">资源索引</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">网页小游戏资源索引</h3>
+            <p class="card-desc">按渲染类型、资源体量、加载方式三个维度归类，给出每类资源的典型路径结构与命名习惯，便于快速比对本地目录。</p>
+            <div class="tags"><span class="tag">路径结构</span><span class="tag">命名习惯</span><span class="tag">分类对照</span></div>
+            <div class="card-meta"><span>更新 11-24</span><b>热度 8.9</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/error-403-thumb/400/300" width="400" height="300" loading="lazy" alt="签名校验失败与403报错排查条目封面">
+            <span class="card-badge">报错排查</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">签名校验失败与 403 报错排查</h3>
+            <p class="card-desc">整理校验失败的三类成因：时间戳偏移、节点签名不一致、缓存残留。条目给出逐步排除顺序，避免反复重装工具。</p>
+            <div class="tags"><span class="tag">时间戳</span><span class="tag">节点签名</span><span class="tag">缓存清理</span></div>
+            <div class="card-meta"><span>更新 11-16</span><b>热度 8.4</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/browser-env-thumb/400/300" width="400" height="300" loading="lazy" alt="浏览器环境配置与缓存策略条目封面">
+            <span class="card-badge">环境配置</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">浏览器环境配置与缓存策略</h3>
+            <p class="card-desc">说明内核版本、缓存开关、跨域设置三项对解析结果的实际影响，并给出不同内核下的推荐配置组合。</p>
+            <div class="tags"><span class="tag">内核版本</span><span class="tag">缓存开关</span><span class="tag">跨域设置</span></div>
+            <div class="card-meta"><span>更新 11-12</span><b>热度 8.1</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/multi-node-thumb/400/300" width="400" height="300" loading="lazy" alt="多节点资源分发对比条目封面">
+            <span class="card-badge">盒子解析</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">多节点资源分发对比</h3>
+            <p class="card-desc">对比 3.1 单节点与 3.2 多节点在加载速度、完整率、失败重试上的差异，给出不同网络条件下的节点选择建议。</p>
+            <div class="tags"><span class="tag">加载速度</span><span class="tag">完整率</span><span class="tag">重试策略</span></div>
+            <div class="card-meta"><span>更新 11-21</span><b>热度 8.6</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/first-setup-thumb/400/300" width="400" height="300" loading="lazy" alt="新手首次解析配置清单条目封面">
+            <span class="card-badge">解析入门</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">新手首次解析配置清单</h3>
+            <p class="card-desc">从安装到跑通第一个条目的最小步骤集，只保留必要环节，标注每一步可能出现的提示含义与对应处理。</p>
+            <div class="tags"><span class="tag">最小步骤</span><span class="tag">提示含义</span><span class="tag">首次跑通</span></div>
+            <div class="card-meta"><span>更新 11-10</span><b>热度 9.0</b></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/local-run-thumb/400/300" width="400" height="300" loading="lazy" alt="本地运行与离线资源包条目封面">
+            <span class="card-badge">资源索引</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">本地运行与离线资源包</h3>
+            <p class="card-desc">讲清离线资源包的目录约定与入口文件位置，说明为什么解压后直接双击入口常常黑屏，以及正确的启动顺序。</p>
+            <div class="tags"><span class="tag">目录约定</span><span class="tag">入口文件</span><span class="tag">黑屏排查</span></div>
+            <div class="card-meta"><span>更新 11-08</span><b>热度 7.9</b></div>
+          </div>
+        </article>
+
+      </div>
+      <p class="no-result" id="noResult">没有匹配的条目，换个工具名或类型词试试，例如“盒子解析”“Canvas”“签名校验”。</p>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="section" id="latest">
+      <div class="sec-head">
+        <h2 class="sec-title">最新更新与动态</h2>
+        <p class="sec-sub">11 月 10 日至 11 月 25 日之间的条目变化</p>
+      </div>
+      <ul class="feed-list">
+        <li class="feed-item">
+          <span class="feed-time">11-25 09:20</span>
+          <div class="feed-main"><div class="feed-name">9l 盒子 3.2 解析流程</div><div class="feed-desc">补充节点选择顺序说明，新增校验失败后的回退步骤</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-25 08:05</span>
+          <div class="feed-main"><div class="feed-name">签名校验失败与 403 报错排查</div><div class="feed-desc">新增“时间戳偏移”一项，附系统时间同步建议</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-24 21:40</span>
+          <div class="feed-main"><div class="feed-name">网页小游戏资源索引</div><div class="feed-desc">按渲染类型重新归类，路径示例扩充至 12 组</div></div>
+          <span class="feed-flag warm">新增</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-23 17:15</span>
+          <div class="feed-main"><div class="feed-name">Canvas 渲染型小游戏解析</div><div class="feed-desc">纹理缺失现象新增 3 个对照案例</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-21 14:30</span>
+          <div class="feed-main"><div class="feed-name">多节点资源分发对比</div><div class="feed-desc">加入弱网条件下的重试次数与完整率数据</div></div>
+          <span class="feed-flag warm">新增</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-20 10:10</span>
+          <div class="feed-main"><div class="feed-name">DOM 渲染型小游戏解析</div><div class="feed-desc">补充内联脚本与外部模块的定位差异对照表</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-18 19:50</span>
+          <div class="feed-main"><div class="feed-name">浏览器环境配置与缓存策略</div><div class="feed-desc">新增不同内核版本下的推荐配置组合</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-16 11:25</span>
+          <div class="feed-main"><div class="feed-name">本地运行与离线资源包</div><div class="feed-desc">黑屏排查一节补充入口文件命名规则</div></div>
+          <span class="feed-flag cool">修订</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-14 16:00</span>
+          <div class="feed-main"><div class="feed-name">新手首次解析配置清单</div><div class="feed-desc">精简步骤至 7 步，删除重复验证环节</div></div>
+          <span class="feed-flag">已更新</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-12 09:35</span>
+          <div class="feed-main"><div class="feed-name">社区讨论：3.2 版本缓存策略是否必要</div><div class="feed-desc">整理 42 条有效讨论，归纳出两种主流做法</div></div>
+          <span class="feed-flag warm">讨论</span>
+        </li>
+        <li class="feed-item">
+          <span class="feed-time">11-10 20:15</span>
+          <div class="feed-main"><div class="feed-name">9l 盒子 3.1 旧版流程归档</div><div class="feed-desc">标注与 3.2 的差异段落，方便版本对照</div></div>
+          <span class="feed-flag cool">归档</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="section" id="cats">
+      <div class="sec-head">
+        <h2 class="sec-title">分类入口</h2>
+        <p class="sec-sub">按用户实际搜索的类别词划分的 8 个方向</p>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#picks"><b>盒子解析</b><span>版本适配、配置读写、节点选择</span></a>
+        <a class="cat-item" href="/#picks"><b>网页游戏</b><span>Canvas 与 DOM 两类渲染差异</span></a>
+        <a class="cat-item" href="/#deep"><b>签名校验</b><span>时间戳、节点签名、校验顺序</span></a>
+        <a class="cat-item" href="/#deep"><b>报错排查</b><span>403、黑屏、资源缺失三类问题</span></a>
+        <a class="cat-item" href="/#guide"><b>环境配置</b><span>内核版本、缓存、跨域设置</span></a>
+        <a class="cat-item" href="/#picks"><b>资源索引</b><span>路径结构、命名习惯、离线包</span></a>
+        <a class="cat-item" href="/#faq"><b>解析入门</b><span>首次跑通的最小步骤集合</span></a>
+        <a class="cat-item" href="/#news"><b>版本动态</b><span>工具更新、社区讨论焦点</span></a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="section" id="deep">
+      <div class="sec-head">
+        <h2 class="sec-title">深度解析：解析流程里的判断维度</h2>
+        <p class="sec-sub">版本差异、渲染类型分歧与排查顺序的具体说明</p>
+      </div>
+      <div class="article">
+        <h3>一、3.1 与 3.2 的流程差异不在步骤数量，而在顺序</h3>
+        <p>
+          很多人把 3.2 的更新理解为“多了几个节点”，于是沿用旧教程的步骤，结果卡在校验环节。实际变化在于<strong>校验环节被前移</strong>：3.1 是先拉取资源再校验完整性，3.2 改为先确认节点签名，再决定从哪个节点取资源。
+          这个顺序调整带来两个直接后果：一是签名不一致时根本不会进入资源拉取阶段，报错更早但更明确；二是节点选择必须在校验之前完成，不能再依赖“先拉一遍看哪个快”。
+        </p>
+        <ul>
+          <li><span class="hl">3.1 顺序</span>：选节点 → 拉资源 → 校验完整性 → 渲染</li>
+          <li><span class="hl">3.2 顺序</span>：节点签名校验 → 选节点 → 拉资源 → 渲染</li>
+          <li>差异结果：3.2 的失败反馈提前，但对系统时间与节点列表的准确性要求更高</li>
+        </ul>
+        <p>
+          因此判断自己该看哪份教程，标准不是“哪个更新”，而是“工具版本号对不对”。3.1 的归档条目仍然有效，只是不适用于 3.2 的校验顺序。
+        </p>
+
+        <h3>二、Canvas 型与 DOM 型的解析策略分歧</h3>
+        <p>
+          网页小游戏的渲染方式决定了资源在哪里。Canvas 型把画面绘制在单一画布上，游戏逻辑与美术资源往往打包成图集，解析难点在于<strong>纹理还原</strong>：图集被切割成小图后按坐标贴回，缺一张就表现为局部空白或纯色块。
+          DOM 型则用 HTML 元素搭建界面，资源多为独立图片与样式文件，解析难点转为<strong>脚本入口定位</strong>：逻辑藏在事件绑定里，找不到入口就只是静态页面。
+        </p>
+        <ul>
+          <li>Canvas 型先看资源体积：体积集中在少数几个大文件，通常是图集，优先处理</li>
+          <li>Canvas 型缺图排查顺序：图集完整性 → 切割坐标 → 贴图顺序</li>
+          <li>DOM 型先看脚本引用：内联脚本直接可读，外部模块需先确认加载顺序</li>
+          <li>DOM 型交互失效排查顺序：事件绑定 → 元素层级 → 样式覆盖</li>
+        </ul>
+        <p>
+          两类之间没有通用解。把 Canvas 型的图集思路套到 DOM 型上，会陷入无意义的资源搜索；反过来，用 DOM 型的入口定位思路处理 Canvas 型，则容易忽略图集这个真正的瓶颈。
+        </p>
+
+        <h3>三、报错信息的优先级判断</h3>
+        <p>
+          解析过程中同时出现多条提示时，处理顺序直接影响效率。经验上按“环境 → 签名 → 资源 → 渲染”四级排序，前一级未解决时，后一级的提示往往是连带结果，不必逐条处理。
+        </p>
+        <ul>
+          <li><strong>环境级</strong>：内核版本过低、跨域被拦截、缓存残留。表现为整体无法载入</li>
+          <li><strong>签名级</strong>：时间戳偏移、节点签名不一致。表现为载入后立即中断</li>
+          <li><strong>资源级</strong>：路径缺失、图集不完整、命名大小写不符。表现为局部空白</li>
+          <li><strong>渲染级</strong>：帧循环未启动、事件未绑定。表现为画面静止但无报错</li>
+        </ul>
+        <p>
+          一个常见误区是把资源级问题当成签名级处理，反复重装工具。判断方法很简单：签名级问题一定伴随明确的中断提示，而资源级问题通常页面已经渲染出框架，只是内容不全。
+        </p>
+
+        <h3>四、缓存策略的两派做法</h3>
+        <p>
+          社区对 3.2 版本是否保留缓存存在分歧。一派主张每次解析前清空缓存，理由是避免旧签名残留导致校验误判；另一派主张保留缓存，理由是重复拉取同一资源会显著拖慢速度，尤其在弱网条件下。
+        </p>
+        <p>
+          实际选择取决于使用频率：<em>低频使用</em>建议每次清空，省去排查缓存问题的时间；<em>高频使用</em>建议保留缓存，但在切换工具版本或节点列表变更时手动清一次。两种做法的差异主要体现在排查成本上，而非解析成功率本身。
+        </p>
+
+        <h3>五、如何判断一个条目是否值得投入时间</h3>
+        <p>
+          面对同类条目，比较维度建议固定为三项：<strong>版本匹配度</strong>、<strong>步骤可验证性</strong>、<strong>报错覆盖度</strong>。版本匹配度决定是否适用；步骤可验证性指每一步是否有明确的成功标志，而不是“继续下一步”；报错覆盖度指是否列出失败情形及对应处理。
+        </p>
+        <p>
+          三项中只要有一项缺失，该条目的实用价值就会明显下降。尤其要注意那些只描述顺利路径、不写失败分支的说明——解析过程中真正耗时的部分恰恰在失败分支上。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. 体验路径 -->
+    <section class="section" id="guide">
+      <div class="sec-head">
+        <h2 class="sec-title">体验路径：从哪一步开始，怎么判断</h2>
+        <p class="sec-sub">内容消费顺序与判断依据，不是操作说明</p>
+      </div>
+      <div class="path-list">
+        <div class="path-item">
+          <div class="path-num">1</div>
+          <div>
+            <h4>先确认自己的工具版本，再选条目</h4>
+            <p>版本号是唯一可靠的分流依据。3.2 看新版流程，3.1 看归档条目，混看会卡在顺序差异上。不确定版本时，先看《9l 盒子 3.2 解析流程》开头的版本对照表。</p>
+          </div>
+        </div>
+        <div class="path-item">
+          <div class="path-num">2</div>
+          <div>
+            <h4>判断目标属于 Canvas 型还是 DOM 型</h4>
+            <p>打开页面看结构：整块画布上作画的是 Canvas 型，元素可单独选中的是 DOM 型。判断清楚再进对应条目，能省掉大量无效搜索。</p>
+          </div>
+        </div>
+        <div class="path-item">
+          <div class="path-num">3</div>
+          <div>
+            <h4>按“环境 → 签名 → 资源 → 渲染”顺序读报错条目</h4>
+            <p>不要跳级。环境级问题没解决时，签名级提示往往是假象。读完一级再进下一级，比通读全部条目再回头排查更快。</p>
+          </div>
+        </div>
+        <div class="path-item">
+          <div class="path-num">4</div>
+          <div>
+            <h4>比较同类条目时看失败分支</h4>
+            <p>只写顺利路径的条目参考价值有限。优先选那些列出失败情形、给出对应处理的说明，尤其在资源级问题上差异明显。</p>
+          </div>
+        </div>
+        <div class="path-item">
+          <div class="path-num">5</div>
+          <div>
+            <h4>最后再看环境配置的细节组合</h4>
+            <p>内核版本、缓存、跨域三项的调整属于优化环节，放在流程跑通之后。顺序颠倒容易把配置问题误判成解析问题。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section" id="faq">
+      <div class="sec-head">
+        <h2 class="sec-title">常见问题</h2>
+        <p class="sec-sub">围绕具体条目与具体类型的 6 个高频提问</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq">
+          <summary>9l 盒子 3.2 和 3.1 的解析流程差别大吗？</summary>
+          <div class="faq-answer">差别集中在顺序而非步骤数量。3.2 把签名校验前移到节点选择之前，因此旧教程的“先拉资源再校验”在 3.2 上会直接中断。版本号对不上时，优先看对应版本的条目。</div>
+        </details>
+        <details class="faq">
+          <summary>Canvas 型网页游戏和 DOM 型，第一次接触该从哪个开始？</summary>
+          <div class="faq-answer">建议从 DOM 型开始。DOM 型的脚本入口相对直观，失败时页面结构仍在，便于对照排查；Canvas 型涉及图集切割与贴图坐标，排查链路更长。</div>
+        </details>
+        <details class="faq">
+          <summary>签名校验失败一般是什么原因？</summary>
+          <div class="faq-answer">常见三类：系统时间偏移导致时间戳不匹配、节点列表里的签名与本地记录不一致、旧缓存残留。按这个顺序排查，多数情况在前两步就能定位。</div>
+        </details>
+        <details class="faq">
+          <summary>页面已经渲染出来但内容缺失，属于哪一级问题？</summary>
+          <div class="faq-answer">属于资源级，不是签名级。签名级问题通常直接中断，不会留下页面框架。资源级先查路径与命名大小写，再查图集完整性。</div>
+        </details>
+        <details class="faq">
+          <summary>解析前到底要不要清缓存？</summary>
+          <div class="faq-answer">低频使用建议每次清空，省去排查缓存问题的时间；高频使用可以保留，但在切换工具版本或节点列表变更时手动清一次。两种做法影响的是排查成本，不是成功率。</div>
+        </details>
+        <details class="faq">
+          <summary>离线资源包解压后双击入口黑屏，是什么情况？</summary>
+          <div class="faq-answer">多半是入口文件位置或启动顺序不对。离线包通常要求从约定的入口启动，而不是直接打开任意 HTML 文件。先确认目录约定，再按条目里给出的启动顺序操作。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="section" id="comments">
+      <div class="sec-head">
+        <h2 class="sec-title">玩家评论</h2>
+        <p class="sec-sub">14 条围绕具体条目与具体类型的讨论</p>
+      </div>
+      <div class="comment-grid">
+        <div class="comment"><div class="c-top"><span class="avatar">夜</span><span class="c-name">夜航船</span><span class="c-time">11-25 10:12</span></div><p class="c-text">3.2 的校验顺序确实坑，我按旧教程折腾半天，回头才发现是顺序问题。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">阿</span><span class="c-name">阿青</span><span class="c-time">11-25 09:40</span></div><p class="c-text">Canvas 型的图集切割讲得比较细，缺图那部分帮我定位到一个命名大小写的问题。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">小</span><span class="c-name">小满</span><span class="c-time">11-24 22:18</span></div><p class="c-text">DOM 型那篇对新手友好，脚本入口那块我一次就看懂了。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">老</span><span class="c-name">老陈</span><span class="c-time">11-24 20:05</span></div><p class="c-text">缓存策略两派说法都写了，这点比较实在，比单方面下结论强。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">蓝</span><span class="c-name">蓝鲸</span><span class="c-time">11-23 18:33</span></div><p class="c-text">403 排查那篇按四级顺序来，确实比以前乱试快很多。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">末</span><span class="c-name">末班车</span><span class="c-time">11-23 15:02</span></div><p class="c-text">多节点对比的数据有点少，弱网那部分希望能再补几组。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">柚</span><span class="c-name">柚子茶</span><span class="c-time">11-22 21:47</span></div><p class="c-text">离线包黑屏那个坑我踩过，入口文件位置确实关键。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">半</span><span class="c-name">半山</span><span class="c-time">11-22 13:20</span></div><p class="c-text">新手清单精简到 7 步之后清爽多了，之前那版有点啰嗦。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">星</span><span class="c-name">星野</span><span class="c-time">11-21 19:11</span></div><p class="c-text">环境配置那篇对不同内核的推荐组合挺有用，我换内核后问题少了一半。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">木</span><span class="c-name">木鱼</span><span class="c-time">11-21 11:36</span></div><p class="c-text">签名校验失败的原因写得清楚，时间戳那条我一开始完全没想到。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">七</span><span class="c-name">七号</span><span class="c-time">11-20 22:08</span></div><p class="c-text">整体偏流程说明，偶尔想看更具体的案例截图，纯文字还是抽象了点。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">云</span><span class="c-name">云间</span><span class="c-time">11-20 16:44</span></div><p class="c-text">3.1 归档那篇留着挺好，我还在用旧版本，正好对照。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">默</span><span class="c-name">默读</span><span class="c-time">11-19 09:58</span></div><p class="c-text">深度解析里判断条目值不值得看那节，标准定得比较明确。</p></div>
+        <div class="comment"><div class="c-top"><span class="avatar">长</span><span class="c-name">长夜</span><span class="c-time">11-18 20:30</span></div><p class="c-text">资源索引按渲染类型归类之后好查多了，之前翻半天找不到对应的路径示例。</p></div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="section" id="news">
+      <div class="sec-head">
+        <h2 class="sec-title">相关资讯</h2>
+        <p class="sec-sub">工具更新、类型变化与社区讨论焦点</p>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-box32-release/600/400" width="600" height="400" loading="lazy" alt="9l盒子3.2版本解析流程更新资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">9l 盒子 3.2 版本解析流程调整，签名校验前移</h3>
+            <span class="news-date">2026-11-24</span>
+            <p class="news-abs">新版把签名校验放到节点选择之前，旧教程的步骤顺序失效。同步更新的两条说明覆盖了回退方式与节点选择建议。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-canvas-trend/600/400" width="600" height="400" loading="lazy" alt="Canvas渲染型网页游戏占比变化资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">Canvas 渲染型网页游戏占比上升，图集资源成主要瓶颈</h3>
+            <span class="news-date">2026-11-21</span>
+            <p class="news-abs">近两个月新增条目中，Canvas 型占比超过六成，对应的缺图排查需求明显增加，纹理还原成为高频问题。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-cache-debate/600/400" width="600" height="400" loading="lazy" alt="社区缓存策略讨论资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">社区讨论：3.2 版本解析前是否需要清空缓存</h3>
+            <span class="news-date">2026-11-12</span>
+            <p class="news-abs">42 条有效讨论归纳出两派做法，分歧集中在排查成本与重复拉取耗时之间，条目已整理两种做法的适用场景。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-multinode/600/400" width="600" height="400" loading="lazy" alt="多节点资源分发对比数据更新资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">多节点资源分发对比补充弱网数据，完整率差异明显</h3>
+            <span class="news-date">2026-11-21</span>
+            <p class="news-abs">弱网条件下多节点重试策略的完整率高于单节点，但首次加载耗时略长，条目给出不同网络条件的节点选择建议。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-403-guide/600/400" width="600" height="400" loading="lazy" alt="签名校验失败与403报错排查更新资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">签名校验失败排查条目新增时间戳偏移一项</h3>
+            <span class="news-date">2026-11-25</span>
+            <p class="news-abs">系统时间偏移导致的校验失败此前常被误判为节点问题，新增条目给出时间同步的具体检查方式。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <img src="https://picsum.photos/seed/news-archive31/600/400" width="600" height="400" loading="lazy" alt="9l盒子3.1旧版流程归档资讯配图">
+          <div class="news-body">
+            <h3 class="news-title">9l 盒子 3.1 旧版流程归档，标注与 3.2 的差异段落</h3>
+            <span class="news-date">2026-11-10</span>
+            <p class="news-abs">仍在用旧版本的用户可对照差异段落判断适用性，归档条目保留原有步骤，不随新版更新调整。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="section" id="reco">
+      <div class="sec-head">
+        <h2 class="sec-title">相关推荐</h2>
+        <p class="sec-sub">延伸方向与具体条目名，与精选角度互补</p>
+      </div>
+      <div class="reco-wrap">
+        <a class="reco-tag" href="/#picks">9l 盒子 3.1 旧版流程归档</a>
+        <a class="reco-tag" href="/#deep">时间戳偏移检查方法</a>
+        <a class="reco-tag" href="/#deep">图集切割坐标对照</a>
+        <a class="reco-tag" href="/#guide">跨域设置与内核版本组合</a>
+        <a class="reco-tag" href="/#picks">离线资源包目录约定</a>
+        <a class="reco-tag" href="/#faq">事件绑定失效排查</a>
+        <a class="reco-tag" href="/#latest">节点列表变更记录</a>
+        <a class="reco-tag" href="/#deep">弱网条件重试策略</a>
+      </div>
+    </section>
+
+    <!-- 11. 热门榜单 -->
+    <section class="section" id="rank">
+      <div class="sec-head">
+        <h2 class="sec-title">条目热度榜</h2>
+        <p class="sec-sub">按近 7 日访问与收藏综合排序，截至 11 月 25 日</p>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item">
+          <span class="rank-no">01</span><span class="rank-name">9l 盒子 3.2 解析流程</span><span class="rank-score">9.6</span>
+          <div class="rank-bar"><i style="width:96%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">02</span><span class="rank-name">Canvas 渲染型小游戏解析</span><span class="rank-score">9.2</span>
+          <div class="rank-bar"><i style="width:92%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">03</span><span class="rank-name">新手首次解析配置清单</span><span class="rank-score">9.0</span>
+          <div class="rank-bar"><i style="width:90%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">04</span><span class="rank-name">网页小游戏资源索引</span><span class="rank-score">8.9</span>
+          <div class="rank-bar"><i style="width:89%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">05</span><span class="rank-name">DOM 渲染型小游戏解析</span><span class="rank-score">8.7</span>
+          <div class="rank-bar"><i style="width:87%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">06</span><span class="rank-name">多节点资源分发对比</span><span class="rank-score">8.6</span>
+          <div class="rank-bar"><i style="width:86%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">07</span><span class="rank-name">签名校验失败与 403 报错排查</span><span class="rank-score">8.4</span>
+          <div class="rank-bar"><i style="width:84%"></i></div>
+        </div>
+        <div class="rank-item">
+          <span class="rank-no">08</span><span class="rank-name">浏览器环境配置与缓存策略</span><span class="rank-score">8.1</span>
+          <div class="rank-bar"><i style="width:81%"></i></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="aux-col">
+    <div class="aux-block panel">
+      <div class="panel-head">热榜 <em>7 日</em></div>
+      <div class="aux-body">
+        <ul class="mini-list">
+          <li><a href="/#picks"><span class="hot-num">1</span>9l 盒子 3.2 解析流程</a><span>9.6</span></li>
+          <li><a href="/#picks"><span class="hot-num">2</span>Canvas 渲染型解析</a><span>9.2</span></li>
+          <li><a href="/#picks"><span class="hot-num">3</span>新手首次配置清单</a><span>9.0</span></li>
+          <li><a href="/#picks"><span class="hot-num">4</span>网页小游戏资源索引</a><span>8.9</span></li>
+          <li><a href="/#picks"><span class="hot-num">5</span>DOM 渲染型解析</a><span>8.7</span></li>
+          <li><a href="/#picks"><span class="hot-num">6</span>多节点资源分发对比</a><span>8.6</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aux-block panel">
+      <div class="panel-head">更新流 <em>近 7 天</em></div>
+      <div class="aux-body">
+        <ul class="mini-list">
+          <li><a href="/#latest">11-25 流程节点顺序补充</a><span>新</span></li>
+          <li><a href="/#latest">11-25 时间戳偏移说明</a><span>新</span></li>
+          <li><a href="/#latest">11-24 资源索引重分类</a><span>改</span></li>
+          <li><a href="/#latest">11-23 缺图案例 3 例</a><span>改</span></li>
+          <li><a href="/#latest">11-21 弱网重试数据</a><span>新</span></li>
+          <li><a href="/#latest">11-20 脚本定位对照表</a><span>改</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aux-block panel">
+      <div class="panel-head">当前版本 <em>提示</em></div>
+      <div class="aux-body">
+        <p class="update-note">主力版本为 <b>9l 盒子 3.2</b>，校验顺序与 3.1 不同。仍在用旧版时请优先查看归档条目，避免按新流程操作。</p>
+      </div>
+    </div>
+
+    <div class="aux-block">
+      <div class="notice-mini">
+        条目均标注更新日期与适用版本。阅读前先确认版本号，比按发布时间筛选更可靠。
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="#3fd0c9" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M12 12v9M4 7.5 12 12l8-4.5" stroke="#2fa8a2" stroke-width="1.4" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="1.7" fill="#ff8a3d"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <b>9l网页破解</b>
+          <span>WEB TOOLKIT</span>
+        </div>
+      </div>
+      <p>整理 9l 游戏盒子解析流程、网页小游戏资源索引与环境配置说明，按版本与渲染类型归类，供玩家对照排查。</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>工具条目</h4>
+      <ul>
+        <li><a href="/#picks">9l 盒子 3.2 解析流程</a></li>
+        <li><a href="/#picks">Canvas 渲染型解析</a></li>
+        <li><a href="/#picks">DOM 渲染型解析</a></li>
+        <li><a href="/#picks">离线资源包说明</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>排查与配置</h4>
+      <ul>
+        <li><a href="/#deep">签名校验失败排查</a></li>
+        <li><a href="/#deep">403 报错处理</a></li>
+        <li><a href="/#guide">浏览器环境配置</a></li>
+        <li><a href="/#faq">常见问题汇总</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>社区与动态</h4>
+      <ul>
+        <li><a href="/#latest">更新日志</a></li>
+        <li><a href="/#comments">玩家评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#rank">条目热度榜</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 9l网页破解 · 内容为工具说明与资源索引整理，条目信息以更新日期标注为准。</span>
+    <span>页面数据截至 2026-11-25 · 热度与评分均为社区示例数值</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var grid = document.getElementById('pickGrid');
+  var noResult = document.getElementById('noResult');
+  if(!input || !grid) return;
+
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+  function normalize(s){
+    return (s || '').toLowerCase().replace(/\s+/g, '');
+  }
+
+  function filter(){
+    var q = normalize(input.value);
+    var visible = 0;
+    cards.forEach(function(card){
+      var text = normalize(card.textContent);
+      var match = !q || text.indexOf(q) !== -1;
+      card.classList.toggle('hidden', !match);
+      if(match) visible++;
+    });
+    if(noResult){
+      noResult.classList.toggle('show', q !== '' && visible === 0);
+    }
+  }
+
+  input.addEventListener('input', filter);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      input.value = '';
+      filter();
+    }
+  });
+})();
+</script>
+
+</body>
+            </html>
